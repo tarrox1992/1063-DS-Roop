@@ -1,4 +1,4 @@
-![Me](1063-DS-Roop/IMG_2177.JPG)
+![Me](tarrox1992.github.com/1063-DS-Roop/IMG_2177.JPG)
 
 Tyler Roop
 
