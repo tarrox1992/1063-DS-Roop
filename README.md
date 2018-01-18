@@ -1,4 +1,4 @@
-![My Pic](./me.png)
+![My Pic](./Me.png)
 
 Tyler Roop
 
