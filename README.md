@@ -1,4 +1,4 @@
-[Me](![Picture of me](./IMG_2177.jpg))
+[IMG_2177.jpg](![Picture of me](./IMG_2177.jpg))
 
 Tyler Roop
 
