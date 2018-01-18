@@ -1,4 +1,4 @@
-![Me](tarrox1992.github.com/1063-DS-Roop/img/IMG_2177.JPG)
+![My image](tarrox1992.github.com/1063-DS-Roop/img/image.jpg)
 
 Tyler Roop
 
