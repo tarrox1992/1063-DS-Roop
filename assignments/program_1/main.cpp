@@ -1,3 +1,14 @@
+/**
+* @ProgramName: Program-1
+* @Author: Tyler Roop
+* @Description:
+*     This program reads in images stored as rgb values in a space delimited file format.
+*     It then flips an image horizontally, vertically, and turns it grayscale.
+* @Course: 1063 Data Structures
+* @Semester: Spring 2018
+* @Date: 27 01 2018
+*/
+
 #include<iostream>
 #include<fstream>
 #include<math.h>
@@ -8,9 +19,10 @@ using namespace std;
 Structure to hold an rgb value
 */
 struct rgb {
-	int r;
-	int g;
-	int b;
+	int r; // int for red value
+	int g; // int for green value
+	int b; // int for blue value
+	// constructor to initialize all values to 0
 	rgb() {
 		int r = 0;
 		int g = 0;
@@ -31,14 +43,14 @@ struct rgb {
 */
 void flipVert(rgb** image, int width, int height)
 {
-	rgb flip;
-	for (int i = 0; i < height / 2; i++)
+	rgb flip; // placeholder for reassigning values
+	for (int i = 0; i < height / 2; i++) // goes through half of the array rows
 	{
-		for (int j = 0; j < width; j++)
+		for (int j = 0; j < width; j++) // goes through each column of the array
 		{
-			flip = image[i][j];
-			image[i][j] = image[height - 1 - i][j];
-			image[height - 1 - i][j] = flip;
+			flip = image[i][j]; // places current value into the placeholder
+			image[i][j] = image[height - 1 - i][j]; // sets current value to the opposite vertical value
+			image[height - 1 - i][j] = flip; // copies placeholder value to the opposite array value
 		}
 	}
 }
@@ -55,14 +67,14 @@ void flipVert(rgb** image, int width, int height)
 *    void
 */
 void flipHorz(rgb** image, int width, int height) {
-	rgb flip;
-	for (int j = 0; j < width / 2; j++)
+	rgb flip; // placeholder for reassinging values
+	for (int j = 0; j < width / 2; j++) // goes through half of the array columns
 	{
-		for (int i = 0; i < height; i++)
+		for (int i = 0; i < height; i++) // goes through each row of the array
 		{
-			flip = image[i][j];
-			image[i][j] = image[i][width - 1 - j];
-			image[i][width - 1 - j] = flip;
+			flip = image[i][j]; // places current value into the placeholder
+			image[i][j] = image[i][width - 1 - j]; // sets current value to the opposite horizontal value
+			image[i][width - 1 - j] = flip; // copies placeholder value to the opposite array value
 		}
 	}
 }
@@ -78,12 +90,13 @@ void flipHorz(rgb** image, int width, int height) {
 * @Returns:
 *    void
 */
-void grayScale(rgb** image, int width, int height) {
+void grayScale(rgb** image, int width, int height)
+{
 	int gray, large, small; // declares variables to hold the gray color, and find
 	                        // largest and smallest rgb value for each pixel
-	for (int i = 0; i < height; i++) {
-		for (int j = 0; j < width; j++) {
-			large = image[i][j].r;
+	for (int i = 0; i < height; i++)
+	{	for (int j = 0; j < width; j++)
+		{	large = image[i][j].r;
 			small = image[i][j].r;
 			if (image[i][j].g > large) // finds largest color value for specified pixel
 				large = image[i][j].g;
@@ -147,17 +160,6 @@ void saveImage(rgb** image, int width, int height, ofstream &ofile)
 		ofile << '\n';
 	}
 }
-
-/**
-* @ProgramName: Program-1
-* @Author: Tyler Roop
-* @Description:
-*     This program reads in images stored as rgb values in a space delimited file format.
-*     It then flips an image horizontally, vertically, and turns it grayscale.
-* @Course: 1063 Data Structures
-* @Semester: Spring 2018
-* @Date: 27 01 2018
-*/
 
 int main() {
 	ifstream ifile;          //Input / output files
