@@ -1,11 +1,12 @@
+```c++
 ///////////////////////////////////////////////////////////////////////////////
-//
+//                   
 // Title:            priorityqueue
 // Files:            input_data.txt
-// Semester:         (course) Spring 2018
+// Semester:         1063 MWF Spring 2018
 //
-// Author:           (your name)
-// Email:            (your email address)
+// Author:           Tyler Roop
+// Email:            tarrox16@yahoo.com
 // Description:
 //       This program takes in a list of animals and then adds them to a queue.
 //       It then sorts them by prioritizing shorter words first, and, in the case
@@ -14,7 +15,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
 using namespace std;
 
 /*
@@ -26,7 +26,6 @@ using namespace std;
 *	   [Node] next		: holds pointer for next spot in queue
 *
 */
-
 struct Node
 {
 	string val;
@@ -129,7 +128,6 @@ public:
 	* Returns
 	*      void
 	*/
-
 	void print(ofstream &outfile)
 	{
 		Node *temp = Front;
@@ -168,7 +166,6 @@ public:
 	* Returns
 	*      void
 	*/
-
 	void sortSL()
 	{
 		Node* t1 = Front;
@@ -258,3 +255,4 @@ int main()
 	Q.print(outfile);
 	return 0;
 }
+```
