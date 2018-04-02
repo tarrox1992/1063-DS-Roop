@@ -1,6 +1,6 @@
 ```c++
 ///////////////////////////////////////////////////////////////////////////////
-//                   YOU MUST COMPLETE AND COMMENT YOUR CODE!
+//                   
 // Title:            priorityqueue
 // Files:            input_data.txt
 // Semester:         (course) Spring 2018
@@ -8,7 +8,9 @@
 // Author:           (your name)
 // Email:            (your email address)
 // Description:
-//       describe program here thoroughly
+//       This program takes in a list of animals and then adds them to a queue.
+//       It then sorts them by prioritizing shorter words first, and, in the case
+// 	 of a tie, it sorts them alphabetically.
 /////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <fstream>
