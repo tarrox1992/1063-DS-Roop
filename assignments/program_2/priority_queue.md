@@ -25,7 +25,6 @@ using namespace std;
 *	   [Node] next		: holds pointer for next spot in queue
 *
 */
-
 struct Node
 {
 	string val;
@@ -128,7 +127,6 @@ public:
 	* Returns
 	*      void
 	*/
-
 	void print(ofstream &outfile)
 	{
 		Node *temp = Front;
@@ -167,7 +165,6 @@ public:
 	* Returns
 	*      void
 	*/
-
 	void sortSL()
 	{
 		Node* t1 = Front;
