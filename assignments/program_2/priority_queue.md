@@ -1,4 +1,4 @@
-```
+```c++
 ///////////////////////////////////////////////////////////////////////////////
 //                   YOU MUST COMPLETE AND COMMENT YOUR CODE!
 // Title:            priorityqueue
