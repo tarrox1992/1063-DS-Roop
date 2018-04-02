@@ -3,10 +3,10 @@
 //                   
 // Title:            priorityqueue
 // Files:            input_data.txt
-// Semester:         (course) Spring 2018
+// Semester:         1063 MWF Spring 2018
 //
-// Author:           (your name)
-// Email:            (your email address)
+// Author:           Tyler Roop
+// Email:            tarrox16@yahoo.com
 // Description:
 //       This program takes in a list of animals and then adds them to a queue.
 //       It then sorts them by prioritizing shorter words first, and, in the case
