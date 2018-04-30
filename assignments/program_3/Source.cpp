@@ -7,11 +7,14 @@
 using namespace std;
 
 int main() {
-	int quit = 20, m = 0, Count = 0;
+	// declares user input multiplier, loop count and file variables
+	int m = 0, Count = 0;
 	ifstream fin;
 	ofstream fout;
 	fin.open("animals.txt");
 	fout.open("output.txt");
+	
+	// sets multiplier variable to what the user inputs
 	cout <<"Please enter a number between 1 and 13 \n";
 	while (m < 1 || m > 13)
 	{
@@ -21,8 +24,7 @@ int main() {
 	DBList List;
 	string a;
 
-
-
+	// creates a linked list with strings from file
 	while (fin >> a) {
 
 		List.InsertRear(a);
@@ -31,11 +33,15 @@ int main() {
 
 	fout << endl;
 
+	// sets file back to beginning
 	fin.clear();
-	fin.seekg(0, std::ios::beg); // back to the start!
+	fin.seekg(0, std::ios::beg);
+	
+	// starts elimination with first item in list
 	fin >> a;
 	fout << "First: ";
 	fout << List.Eliminate(a, m) << '\n';
+	// loop using the rest of the file to eliminate animals
 	while (fin >> a) {
 		if (Count % 11 == 0)
 		{
@@ -49,5 +55,5 @@ int main() {
 	fout << "WINNER: " << List.Eliminate(a, m) << '\n';
 	fin.close();
 	fout.close();
-	system("pause");
+	return 0;
 }
