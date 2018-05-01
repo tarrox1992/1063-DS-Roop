@@ -1,3 +1,15 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+// ProgramName: Program-3 Survival
+// Author: Tyler Roop
+// Description:
+//   This program reads in a list of animals from a file. It then asks a user for an integer to use an
+//   a multiplier. The program uses the multiplier and the number of digits in the name of the current animal
+//   to select the next animal to 'eliminate'. The first animal eliminated and every 11th animal eliminated are
+//   printed to a file along with the only remaining animal.
+// Course: 1063 Data Structures
+// Semester: Spring 2018
+// Date: 30 04 2018
+/////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <fstream>
 #include <string>
